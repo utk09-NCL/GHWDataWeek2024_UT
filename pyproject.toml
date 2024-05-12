@@ -9,6 +9,8 @@ python = ">=3.10.0,<3.12"
 plotly = "^5.22.0"
 streamlit = "^1.34.0"
 pandas = "^2.2.2"
+geopy = "^2.4.1"
+folium = "^0.16.0"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
