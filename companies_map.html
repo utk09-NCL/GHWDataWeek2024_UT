@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25b3cb23271f6e910fd4db8b7fc4aea7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_25b3cb23271f6e910fd4db8b7fc4aea7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_25b3cb23271f6e910fd4db8b7fc4aea7 = L.map(
+                "map_25b3cb23271f6e910fd4db8b7fc4aea7",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab8b6d0829ee0330ee11b172f6b7e263 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ab8b6d0829ee0330ee11b172f6b7e263.addTo(map_25b3cb23271f6e910fd4db8b7fc4aea7);
+        
+    
+            var marker_cluster_d7db27b457dfc189261e8bbb0114c335 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_24b2ba4a0be7a02b635bdeaa2e083107 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_175938a324929d64e4402bbd455d151b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed1f049d4756e7e32189f2ab3259bd45 = $(`<div id="html_ed1f049d4756e7e32189f2ab3259bd45" style="width: 100.0%; height: 100.0%;">1: Apple Inc., United States</div>`)[0];
+                popup_175938a324929d64e4402bbd455d151b.setContent(html_ed1f049d4756e7e32189f2ab3259bd45);
+            
+        
+
+        marker_24b2ba4a0be7a02b635bdeaa2e083107.bindPopup(popup_175938a324929d64e4402bbd455d151b)
+        ;
+
+        
+    
+    
+            var marker_46285bdffcc1de69d3ee28728c983e43 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_d95284f33220142baa17462ca9521eff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae04210d01dfac3f75f5a6bdd8674e36 = $(`<div id="html_ae04210d01dfac3f75f5a6bdd8674e36" style="width: 100.0%; height: 100.0%;">2: Microsoft Corporation, United States</div>`)[0];
+                popup_d95284f33220142baa17462ca9521eff.setContent(html_ae04210d01dfac3f75f5a6bdd8674e36);
+            
+        
+
+        marker_46285bdffcc1de69d3ee28728c983e43.bindPopup(popup_d95284f33220142baa17462ca9521eff)
+        ;
+
+        
+    
+    
+            var marker_5b9e112e8db8172c4c958b15c2e481e9 = L.marker(
+                [25.6242618, 42.3528328],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_2babb807b1ad3a22bbbc3224cde9189d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_324bbe4558605e5b4b5449f80aee6361 = $(`<div id="html_324bbe4558605e5b4b5449f80aee6361" style="width: 100.0%; height: 100.0%;">3: Saudi Arabian Oil Company, Saudi Arabia</div>`)[0];
+                popup_2babb807b1ad3a22bbbc3224cde9189d.setContent(html_324bbe4558605e5b4b5449f80aee6361);
+            
+        
+
+        marker_5b9e112e8db8172c4c958b15c2e481e9.bindPopup(popup_2babb807b1ad3a22bbbc3224cde9189d)
+        ;
+
+        
+    
+    
+            var marker_6c89f7ab13d91a2df2d2b23975d9f148 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_b9611403bc07b98ae855666d6f6bff7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ebad2aace3806aeae432a56936643e7 = $(`<div id="html_0ebad2aace3806aeae432a56936643e7" style="width: 100.0%; height: 100.0%;">4: Alphabet Inc., United States</div>`)[0];
+                popup_b9611403bc07b98ae855666d6f6bff7b.setContent(html_0ebad2aace3806aeae432a56936643e7);
+            
+        
+
+        marker_6c89f7ab13d91a2df2d2b23975d9f148.bindPopup(popup_b9611403bc07b98ae855666d6f6bff7b)
+        ;
+
+        
+    
+    
+            var marker_3f25552d8a8dd53e7a7097a0a3758549 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_9fc5270c342b02a387f04d970a526577 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_910c0813d4c4db692a5eb0a7958fa931 = $(`<div id="html_910c0813d4c4db692a5eb0a7958fa931" style="width: 100.0%; height: 100.0%;">5: Amazon.com, Inc., United States</div>`)[0];
+                popup_9fc5270c342b02a387f04d970a526577.setContent(html_910c0813d4c4db692a5eb0a7958fa931);
+            
+        
+
+        marker_3f25552d8a8dd53e7a7097a0a3758549.bindPopup(popup_9fc5270c342b02a387f04d970a526577)
+        ;
+
+        
+    
+    
+            var marker_6a62233bcb76523c7496d7934af9a27d = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_9a81f112e989bbd2e8915a435652c89b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a54f5ee91200cafa1cd3e06a0b2aa4 = $(`<div id="html_26a54f5ee91200cafa1cd3e06a0b2aa4" style="width: 100.0%; height: 100.0%;">6: Nvidia Corporation, United States</div>`)[0];
+                popup_9a81f112e989bbd2e8915a435652c89b.setContent(html_26a54f5ee91200cafa1cd3e06a0b2aa4);
+            
+        
+
+        marker_6a62233bcb76523c7496d7934af9a27d.bindPopup(popup_9a81f112e989bbd2e8915a435652c89b)
+        ;
+
+        
+    
+    
+            var marker_f2afc838c11f942a4f938d8138be7b54 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_e96844a6fb2961a0b09a4e04efc516b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85c92e9bea9520f14ad328a6795aba27 = $(`<div id="html_85c92e9bea9520f14ad328a6795aba27" style="width: 100.0%; height: 100.0%;">7: Meta Platforms, Inc., United States</div>`)[0];
+                popup_e96844a6fb2961a0b09a4e04efc516b6.setContent(html_85c92e9bea9520f14ad328a6795aba27);
+            
+        
+
+        marker_f2afc838c11f942a4f938d8138be7b54.bindPopup(popup_e96844a6fb2961a0b09a4e04efc516b6)
+        ;
+
+        
+    
+    
+            var marker_34327d2c538ce8448bea735047a6e20d = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_bf9ea332e307d01f1c2280a7d9f1d755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50d7a7fe53092bbd6a0d683fdd1883cb = $(`<div id="html_50d7a7fe53092bbd6a0d683fdd1883cb" style="width: 100.0%; height: 100.0%;">8: Berkshire Hathaway Inc., United States</div>`)[0];
+                popup_bf9ea332e307d01f1c2280a7d9f1d755.setContent(html_50d7a7fe53092bbd6a0d683fdd1883cb);
+            
+        
+
+        marker_34327d2c538ce8448bea735047a6e20d.bindPopup(popup_bf9ea332e307d01f1c2280a7d9f1d755)
+        ;
+
+        
+    
+    
+            var marker_d8e71f6fad4780683518affdaaa25e6a = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_12aec0600b4da094f64ac0360719dac7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2329436c4720b9357fced14d50aa1cd9 = $(`<div id="html_2329436c4720b9357fced14d50aa1cd9" style="width: 100.0%; height: 100.0%;">9: Tesla, Inc., United States</div>`)[0];
+                popup_12aec0600b4da094f64ac0360719dac7.setContent(html_2329436c4720b9357fced14d50aa1cd9);
+            
+        
+
+        marker_d8e71f6fad4780683518affdaaa25e6a.bindPopup(popup_12aec0600b4da094f64ac0360719dac7)
+        ;
+
+        
+    
+    
+            var marker_c5b10e1c8967633d4b8df769925a5a23 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_3246c3810d5625d99e8fbd55d226b080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dda91f7472eceaa3fb8efc5431a6bfc = $(`<div id="html_8dda91f7472eceaa3fb8efc5431a6bfc" style="width: 100.0%; height: 100.0%;">10: Eli Lilly and Company, United States</div>`)[0];
+                popup_3246c3810d5625d99e8fbd55d226b080.setContent(html_8dda91f7472eceaa3fb8efc5431a6bfc);
+            
+        
+
+        marker_c5b10e1c8967633d4b8df769925a5a23.bindPopup(popup_3246c3810d5625d99e8fbd55d226b080)
+        ;
+
+        
+    
+    
+            var marker_426e0188cc595c4dc3a15d8608b00bef = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_1db599e0c0b172d32bbae4506d5e2bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4090e064009025e3d645dfb3cd65e0d9 = $(`<div id="html_4090e064009025e3d645dfb3cd65e0d9" style="width: 100.0%; height: 100.0%;">11: Visa Inc., United States</div>`)[0];
+                popup_1db599e0c0b172d32bbae4506d5e2bc0.setContent(html_4090e064009025e3d645dfb3cd65e0d9);
+            
+        
+
+        marker_426e0188cc595c4dc3a15d8608b00bef.bindPopup(popup_1db599e0c0b172d32bbae4506d5e2bc0)
+        ;
+
+        
+    
+    
+            var marker_330179aebcc0735b94fee4837c2eb677 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_e04b066df10ed2c747149410f3e5c9fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_571bb2d1c0cb09644f063bad7f17ba06 = $(`<div id="html_571bb2d1c0cb09644f063bad7f17ba06" style="width: 100.0%; height: 100.0%;">12: UnitedHealth Group Incorporated, United States</div>`)[0];
+                popup_e04b066df10ed2c747149410f3e5c9fc.setContent(html_571bb2d1c0cb09644f063bad7f17ba06);
+            
+        
+
+        marker_330179aebcc0735b94fee4837c2eb677.bindPopup(popup_e04b066df10ed2c747149410f3e5c9fc)
+        ;
+
+        
+    
+    
+            var marker_360ecaddae0a47cd681600ae72660c75 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_79f73b08e5b61dfb289e021bb7c34aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b3755ab0c801f7d227fe2e7bcdd3e0 = $(`<div id="html_12b3755ab0c801f7d227fe2e7bcdd3e0" style="width: 100.0%; height: 100.0%;">13: Broadcom Inc., United States</div>`)[0];
+                popup_79f73b08e5b61dfb289e021bb7c34aa6.setContent(html_12b3755ab0c801f7d227fe2e7bcdd3e0);
+            
+        
+
+        marker_360ecaddae0a47cd681600ae72660c75.bindPopup(popup_79f73b08e5b61dfb289e021bb7c34aa6)
+        ;
+
+        
+    
+    
+            var marker_5e7f6797a82d165bfe8cf7afb26742da = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_18d04440516869049992e0e05b0378e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7fcf9131d8323fd3d1329cc2d2b4279 = $(`<div id="html_a7fcf9131d8323fd3d1329cc2d2b4279" style="width: 100.0%; height: 100.0%;">14: JPMorgan Chase & Co., United States</div>`)[0];
+                popup_18d04440516869049992e0e05b0378e2.setContent(html_a7fcf9131d8323fd3d1329cc2d2b4279);
+            
+        
+
+        marker_5e7f6797a82d165bfe8cf7afb26742da.bindPopup(popup_18d04440516869049992e0e05b0378e2)
+        ;
+
+        
+    
+    
+            var marker_94576efbec82374df2dfee28112d147f = L.marker(
+                [23.9739374, 120.9820179],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_0673f38e3a0f7583ba2b34294af0cae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf9e551ab212db8c12362bdd1f7fe8b = $(`<div id="html_9cf9e551ab212db8c12362bdd1f7fe8b" style="width: 100.0%; height: 100.0%;">15: Taiwan Semiconductor Manufacturing Company Limited, Taiwan</div>`)[0];
+                popup_0673f38e3a0f7583ba2b34294af0cae8.setContent(html_9cf9e551ab212db8c12362bdd1f7fe8b);
+            
+        
+
+        marker_94576efbec82374df2dfee28112d147f.bindPopup(popup_0673f38e3a0f7583ba2b34294af0cae8)
+        ;
+
+        
+    
+    
+            var marker_bd7fadf3bb30cf6b5661788ac9644509 = L.marker(
+                [55.670249, 10.3333283],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_bc0ee5894d554aa59379328357e664f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4e72bc405a0f113a1af2fcc2993db4e = $(`<div id="html_f4e72bc405a0f113a1af2fcc2993db4e" style="width: 100.0%; height: 100.0%;">16: Novo Nordisk A/S, Denmark</div>`)[0];
+                popup_bc0ee5894d554aa59379328357e664f9.setContent(html_f4e72bc405a0f113a1af2fcc2993db4e);
+            
+        
+
+        marker_bd7fadf3bb30cf6b5661788ac9644509.bindPopup(popup_bc0ee5894d554aa59379328357e664f9)
+        ;
+
+        
+    
+    
+            var marker_8e27af3ece3adb28734e6bbd53bcd6e4 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_786e44fad45347258681b5784f0eed15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b3a7132a7ea34b3fc68a1537059ec6 = $(`<div id="html_57b3a7132a7ea34b3fc68a1537059ec6" style="width: 100.0%; height: 100.0%;">17: Walmart Inc., United States</div>`)[0];
+                popup_786e44fad45347258681b5784f0eed15.setContent(html_57b3a7132a7ea34b3fc68a1537059ec6);
+            
+        
+
+        marker_8e27af3ece3adb28734e6bbd53bcd6e4.bindPopup(popup_786e44fad45347258681b5784f0eed15)
+        ;
+
+        
+    
+    
+            var marker_8aa609cb7593c770a51690ade418b757 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_77fe659e7be4ea07a0ca51185f366299 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beb458b8db93a0354213e972fc571621 = $(`<div id="html_beb458b8db93a0354213e972fc571621" style="width: 100.0%; height: 100.0%;">18: Exxon Mobil Corporation, United States</div>`)[0];
+                popup_77fe659e7be4ea07a0ca51185f366299.setContent(html_beb458b8db93a0354213e972fc571621);
+            
+        
+
+        marker_8aa609cb7593c770a51690ade418b757.bindPopup(popup_77fe659e7be4ea07a0ca51185f366299)
+        ;
+
+        
+    
+    
+            var marker_7f53ca199974cdd289fd13786a32a33f = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_468f85d76c0a2dd4603391f1662503b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_991c472a084f3e0b47e35df9e064ee75 = $(`<div id="html_991c472a084f3e0b47e35df9e064ee75" style="width: 100.0%; height: 100.0%;">19: LVMH Moët Hennessy - Louis Vuitton, SE, France</div>`)[0];
+                popup_468f85d76c0a2dd4603391f1662503b8.setContent(html_991c472a084f3e0b47e35df9e064ee75);
+            
+        
+
+        marker_7f53ca199974cdd289fd13786a32a33f.bindPopup(popup_468f85d76c0a2dd4603391f1662503b8)
+        ;
+
+        
+    
+    
+            var marker_ab84575f7b10f3fb5c1baaa158cb77f5 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_9e990959ad433a4bea497caf388031a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f33c12be75cef2f656d870a00240e72 = $(`<div id="html_4f33c12be75cef2f656d870a00240e72" style="width: 100.0%; height: 100.0%;">20: Mastercard Incorporated, United States</div>`)[0];
+                popup_9e990959ad433a4bea497caf388031a8.setContent(html_4f33c12be75cef2f656d870a00240e72);
+            
+        
+
+        marker_ab84575f7b10f3fb5c1baaa158cb77f5.bindPopup(popup_9e990959ad433a4bea497caf388031a8)
+        ;
+
+        
+    
+    
+            var marker_e9bf84cf534e16ac7fa00f6b66cdf44c = L.marker(
+                [36.638392, 127.6961188],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_f4f680ad6b73eb4dcbd8737b8e4c149d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faa30ad61b22ec0a359490d0cd192b97 = $(`<div id="html_faa30ad61b22ec0a359490d0cd192b97" style="width: 100.0%; height: 100.0%;">21: Samsung Electronics Co., Ltd., South Korea</div>`)[0];
+                popup_f4f680ad6b73eb4dcbd8737b8e4c149d.setContent(html_faa30ad61b22ec0a359490d0cd192b97);
+            
+        
+
+        marker_e9bf84cf534e16ac7fa00f6b66cdf44c.bindPopup(popup_f4f680ad6b73eb4dcbd8737b8e4c149d)
+        ;
+
+        
+    
+    
+            var marker_eb7038004061def09293dc635249eb51 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_ce38635d0e2a9faca5256c78a4c91f76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0609d5ee019a07de97f4800f7b5b0b6a = $(`<div id="html_0609d5ee019a07de97f4800f7b5b0b6a" style="width: 100.0%; height: 100.0%;">22: Johnson & Johnson, United States</div>`)[0];
+                popup_ce38635d0e2a9faca5256c78a4c91f76.setContent(html_0609d5ee019a07de97f4800f7b5b0b6a);
+            
+        
+
+        marker_eb7038004061def09293dc635249eb51.bindPopup(popup_ce38635d0e2a9faca5256c78a4c91f76)
+        ;
+
+        
+    
+    
+            var marker_498a7eddf672245cf9868415c05b8c50 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_42a519ead380ed04db659cc778d021a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a38d53d75492ddb3f1b3d9f64eb1439 = $(`<div id="html_1a38d53d75492ddb3f1b3d9f64eb1439" style="width: 100.0%; height: 100.0%;">23: Tencent Holdings Ltd, China</div>`)[0];
+                popup_42a519ead380ed04db659cc778d021a1.setContent(html_1a38d53d75492ddb3f1b3d9f64eb1439);
+            
+        
+
+        marker_498a7eddf672245cf9868415c05b8c50.bindPopup(popup_42a519ead380ed04db659cc778d021a1)
+        ;
+
+        
+    
+    
+            var marker_0a7224e1f5346129427fb47b88df269b = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_78e6286c6eee708d4581de5fa45765fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6891ef225d941e9a07755a11f139af7 = $(`<div id="html_b6891ef225d941e9a07755a11f139af7" style="width: 100.0%; height: 100.0%;">24: The Procter & Gamble Company, United States</div>`)[0];
+                popup_78e6286c6eee708d4581de5fa45765fc.setContent(html_b6891ef225d941e9a07755a11f139af7);
+            
+        
+
+        marker_0a7224e1f5346129427fb47b88df269b.bindPopup(popup_78e6286c6eee708d4581de5fa45765fc)
+        ;
+
+        
+    
+    
+            var marker_cfed0aeda745a7174a8f02c8fd2b7b52 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_6a1edb5e288b4c94bf709c9ee583cc02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b09d3cb9668f0846b5b018c798c2ebe = $(`<div id="html_9b09d3cb9668f0846b5b018c798c2ebe" style="width: 100.0%; height: 100.0%;">25: The Home Depot, Inc., United States</div>`)[0];
+                popup_6a1edb5e288b4c94bf709c9ee583cc02.setContent(html_9b09d3cb9668f0846b5b018c798c2ebe);
+            
+        
+
+        marker_cfed0aeda745a7174a8f02c8fd2b7b52.bindPopup(popup_6a1edb5e288b4c94bf709c9ee583cc02)
+        ;
+
+        
+    
+    
+            var marker_60e55182dd12e5d1eea23731ca607b74 = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_ed075e85707e3e90a206377dec6a95d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87c72b44a831a429a91fe1335935272a = $(`<div id="html_87c72b44a831a429a91fe1335935272a" style="width: 100.0%; height: 100.0%;">26: Kweichow Moutai Co. Ltd, China</div>`)[0];
+                popup_ed075e85707e3e90a206377dec6a95d1.setContent(html_87c72b44a831a429a91fe1335935272a);
+            
+        
+
+        marker_60e55182dd12e5d1eea23731ca607b74.bindPopup(popup_ed075e85707e3e90a206377dec6a95d1)
+        ;
+
+        
+    
+    
+            var marker_d0928580461abb6ad939fff8bd3f105e = L.marker(
+                [52.2434979, 5.6343227],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_4ddc57135d8f2de8ae6ff4c6be6ef625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8917c344c353e27077ffb615ac3c893 = $(`<div id="html_d8917c344c353e27077ffb615ac3c893" style="width: 100.0%; height: 100.0%;">27: ASML Holding N.V., Netherlands</div>`)[0];
+                popup_4ddc57135d8f2de8ae6ff4c6be6ef625.setContent(html_d8917c344c353e27077ffb615ac3c893);
+            
+        
+
+        marker_d0928580461abb6ad939fff8bd3f105e.bindPopup(popup_4ddc57135d8f2de8ae6ff4c6be6ef625)
+        ;
+
+        
+    
+    
+            var marker_9bbaecb975fbcd815e1cb7bb47920fbf = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_44d134eabbcb8c7e68ffae83f88facf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dcaa9c94fa5135278988fd826cc3b02 = $(`<div id="html_7dcaa9c94fa5135278988fd826cc3b02" style="width: 100.0%; height: 100.0%;">28: Merck & Co., Inc., United States</div>`)[0];
+                popup_44d134eabbcb8c7e68ffae83f88facf8.setContent(html_7dcaa9c94fa5135278988fd826cc3b02);
+            
+        
+
+        marker_9bbaecb975fbcd815e1cb7bb47920fbf.bindPopup(popup_44d134eabbcb8c7e68ffae83f88facf8)
+        ;
+
+        
+    
+    
+            var marker_175553333a0c15785bb017f3391fe16c = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_ec2536becf212cffc6895eb9acd4c806 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eee3f6cf46a04c829305eb3dd432c43 = $(`<div id="html_9eee3f6cf46a04c829305eb3dd432c43" style="width: 100.0%; height: 100.0%;">29: Costco Wholesale Corporation, United States</div>`)[0];
+                popup_ec2536becf212cffc6895eb9acd4c806.setContent(html_9eee3f6cf46a04c829305eb3dd432c43);
+            
+        
+
+        marker_175553333a0c15785bb017f3391fe16c.bindPopup(popup_ec2536becf212cffc6895eb9acd4c806)
+        ;
+
+        
+    
+    
+            var marker_ede72fca0e51bdf3139cdd09c452ef3c = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_ba1a3b416097f2d874b9be88b399642a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b77f8682263a946c9885feeba720fcbe = $(`<div id="html_b77f8682263a946c9885feeba720fcbe" style="width: 100.0%; height: 100.0%;">30: Chevron Corporation, United States</div>`)[0];
+                popup_ba1a3b416097f2d874b9be88b399642a.setContent(html_b77f8682263a946c9885feeba720fcbe);
+            
+        
+
+        marker_ede72fca0e51bdf3139cdd09c452ef3c.bindPopup(popup_ba1a3b416097f2d874b9be88b399642a)
+        ;
+
+        
+    
+    
+            var marker_4f2489158b07ad16cd71cf3a2df3dec3 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_6d6b065b159a599832e7683e2ff274ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f7441260f535a62292fd8a4b8f46958 = $(`<div id="html_4f7441260f535a62292fd8a4b8f46958" style="width: 100.0%; height: 100.0%;">31: AbbVie Inc., United States</div>`)[0];
+                popup_6d6b065b159a599832e7683e2ff274ba.setContent(html_4f7441260f535a62292fd8a4b8f46958);
+            
+        
+
+        marker_4f2489158b07ad16cd71cf3a2df3dec3.bindPopup(popup_6d6b065b159a599832e7683e2ff274ba)
+        ;
+
+        
+    
+    
+            var marker_37dbcd69ade1e86a27a8351aad33f80a = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_266c1017a5fafe09af21be872f8e53c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0a1ee66b1bf2adff1f7eac9e9d17deb = $(`<div id="html_d0a1ee66b1bf2adff1f7eac9e9d17deb" style="width: 100.0%; height: 100.0%;">32: Oracle Corporation, United States</div>`)[0];
+                popup_266c1017a5fafe09af21be872f8e53c6.setContent(html_d0a1ee66b1bf2adff1f7eac9e9d17deb);
+            
+        
+
+        marker_37dbcd69ade1e86a27a8351aad33f80a.bindPopup(popup_266c1017a5fafe09af21be872f8e53c6)
+        ;
+
+        
+    
+    
+            var marker_7b2082eaf01d2fb56d7c1a6a73f4501b = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_fac0d0288b242cfe2a6e9da8ac8217a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad5cd392fca75a24d6a2a5bbe0057bc = $(`<div id="html_fad5cd392fca75a24d6a2a5bbe0057bc" style="width: 100.0%; height: 100.0%;">33: Bank of America Corporation, United States</div>`)[0];
+                popup_fac0d0288b242cfe2a6e9da8ac8217a8.setContent(html_fad5cd392fca75a24d6a2a5bbe0057bc);
+            
+        
+
+        marker_7b2082eaf01d2fb56d7c1a6a73f4501b.bindPopup(popup_fac0d0288b242cfe2a6e9da8ac8217a8)
+        ;
+
+        
+    
+    
+            var marker_d44765aacee47d6cf06aced6a29e97cb = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_791399168f725c14da6ef75df43e967a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53ee74a757dce468026892bbff31c116 = $(`<div id="html_53ee74a757dce468026892bbff31c116" style="width: 100.0%; height: 100.0%;">34: L'Oréal SA, France</div>`)[0];
+                popup_791399168f725c14da6ef75df43e967a.setContent(html_53ee74a757dce468026892bbff31c116);
+            
+        
+
+        marker_d44765aacee47d6cf06aced6a29e97cb.bindPopup(popup_791399168f725c14da6ef75df43e967a)
+        ;
+
+        
+    
+    
+            var marker_ce44f1e201af851def428a16c020701b = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_5788a7e0d7d8d04a84a6453fe0c718d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28a63d45e16913b9ec2e2f2cdfb406f4 = $(`<div id="html_28a63d45e16913b9ec2e2f2cdfb406f4" style="width: 100.0%; height: 100.0%;">35: Adobe Inc., United States</div>`)[0];
+                popup_5788a7e0d7d8d04a84a6453fe0c718d2.setContent(html_28a63d45e16913b9ec2e2f2cdfb406f4);
+            
+        
+
+        marker_ce44f1e201af851def428a16c020701b.bindPopup(popup_5788a7e0d7d8d04a84a6453fe0c718d2)
+        ;
+
+        
+    
+    
+            var marker_ab43b6a4f93f6effbf28662c57c9738f = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_8b56816f6c2b9aad1ce356f78211d01b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6e681e8e896f41a346d55e4b7f28d00 = $(`<div id="html_d6e681e8e896f41a346d55e4b7f28d00" style="width: 100.0%; height: 100.0%;">36: The Coca-Cola Company, United States</div>`)[0];
+                popup_8b56816f6c2b9aad1ce356f78211d01b.setContent(html_d6e681e8e896f41a346d55e4b7f28d00);
+            
+        
+
+        marker_ab43b6a4f93f6effbf28662c57c9738f.bindPopup(popup_8b56816f6c2b9aad1ce356f78211d01b)
+        ;
+
+        
+    
+    
+            var marker_8918d7e299d5cf1e1077eccb4886fd8d = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_6103ac550b5598cc7bf7f88e3242db97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d819c0bb8e438835addd0f0099d2829 = $(`<div id="html_9d819c0bb8e438835addd0f0099d2829" style="width: 100.0%; height: 100.0%;">37: Toyota Motor Corporation, Japan</div>`)[0];
+                popup_6103ac550b5598cc7bf7f88e3242db97.setContent(html_9d819c0bb8e438835addd0f0099d2829);
+            
+        
+
+        marker_8918d7e299d5cf1e1077eccb4886fd8d.bindPopup(popup_6103ac550b5598cc7bf7f88e3242db97)
+        ;
+
+        
+    
+    
+            var marker_f185fa12de2c8e23c049c33883ea84e2 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_22cf644ed2294a7246e6cdf99fb29e2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39d3fa89e7861033a7b3c6d76c18e12c = $(`<div id="html_39d3fa89e7861033a7b3c6d76c18e12c" style="width: 100.0%; height: 100.0%;">38: salesforce.com, inc., United States</div>`)[0];
+                popup_22cf644ed2294a7246e6cdf99fb29e2b.setContent(html_39d3fa89e7861033a7b3c6d76c18e12c);
+            
+        
+
+        marker_f185fa12de2c8e23c049c33883ea84e2.bindPopup(popup_22cf644ed2294a7246e6cdf99fb29e2b)
+        ;
+
+        
+    
+    
+            var marker_e7615f202dfd6c6b3060a732b06e6233 = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_06930177e5275c5fb00ce90eb6bb54a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5874521db182f9836e582d5784593838 = $(`<div id="html_5874521db182f9836e582d5784593838" style="width: 100.0%; height: 100.0%;">39: Roche Holding AG, Switzerland</div>`)[0];
+                popup_06930177e5275c5fb00ce90eb6bb54a4.setContent(html_5874521db182f9836e582d5784593838);
+            
+        
+
+        marker_e7615f202dfd6c6b3060a732b06e6233.bindPopup(popup_06930177e5275c5fb00ce90eb6bb54a4)
+        ;
+
+        
+    
+    
+            var marker_fbf9de5a54ae9f600994131576e45720 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_2908f0ec9d783f7cec34300219b4c722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ad2ff4f502beb4f6cf0fbe03e2cd1f3 = $(`<div id="html_6ad2ff4f502beb4f6cf0fbe03e2cd1f3" style="width: 100.0%; height: 100.0%;">40: PepsiCo, Inc., United States</div>`)[0];
+                popup_2908f0ec9d783f7cec34300219b4c722.setContent(html_6ad2ff4f502beb4f6cf0fbe03e2cd1f3);
+            
+        
+
+        marker_fbf9de5a54ae9f600994131576e45720.bindPopup(popup_2908f0ec9d783f7cec34300219b4c722)
+        ;
+
+        
+    
+    
+            var marker_258e0d5c11de42afe394d96d5603034d = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_2ac74c0e131ff9bc7f3f6946bb0b850c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd0b74fc794afa029921f9732e170bb9 = $(`<div id="html_dd0b74fc794afa029921f9732e170bb9" style="width: 100.0%; height: 100.0%;">41: Industrial & Commercial Bank of China Ltd, China</div>`)[0];
+                popup_2ac74c0e131ff9bc7f3f6946bb0b850c.setContent(html_dd0b74fc794afa029921f9732e170bb9);
+            
+        
+
+        marker_258e0d5c11de42afe394d96d5603034d.bindPopup(popup_2ac74c0e131ff9bc7f3f6946bb0b850c)
+        ;
+
+        
+    
+    
+            var marker_bca89fd4eda3292aa33ddea381a5b39e = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_d190070d22e87b574aa1dd89b88e1c4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b766667264a15c48e3fcd6e019a0a18 = $(`<div id="html_8b766667264a15c48e3fcd6e019a0a18" style="width: 100.0%; height: 100.0%;">42: Novartis AG, Switzerland</div>`)[0];
+                popup_d190070d22e87b574aa1dd89b88e1c4b.setContent(html_8b766667264a15c48e3fcd6e019a0a18);
+            
+        
+
+        marker_bca89fd4eda3292aa33ddea381a5b39e.bindPopup(popup_d190070d22e87b574aa1dd89b88e1c4b)
+        ;
+
+        
+    
+    
+            var marker_833edb08629b46fc4eae63c7c96fe783 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_6faca48b7d5cea810c27affcd5f34ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b953ef7dc068ae75e292455344eec89d = $(`<div id="html_b953ef7dc068ae75e292455344eec89d" style="width: 100.0%; height: 100.0%;">43: Advanced Micro Devices, Inc., United States</div>`)[0];
+                popup_6faca48b7d5cea810c27affcd5f34ef1.setContent(html_b953ef7dc068ae75e292455344eec89d);
+            
+        
+
+        marker_833edb08629b46fc4eae63c7c96fe783.bindPopup(popup_6faca48b7d5cea810c27affcd5f34ef1)
+        ;
+
+        
+    
+    
+            var marker_83743f486ec39a1cac41aef6b4c22e30 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_b5b3d720ca57d7addf4c481e2f3567f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18dedac30f5fa093bf78a65471025924 = $(`<div id="html_18dedac30f5fa093bf78a65471025924" style="width: 100.0%; height: 100.0%;">44: Hermès International SCA, France</div>`)[0];
+                popup_b5b3d720ca57d7addf4c481e2f3567f7.setContent(html_18dedac30f5fa093bf78a65471025924);
+            
+        
+
+        marker_83743f486ec39a1cac41aef6b4c22e30.bindPopup(popup_b5b3d720ca57d7addf4c481e2f3567f7)
+        ;
+
+        
+    
+    
+            var marker_5e614b4eb2e8bd16aa44b6b741170ee3 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_bb9f44ca32b4923ffb43d11593a55095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d19a67eaef8bbe026ef4a1ea66a57b2 = $(`<div id="html_2d19a67eaef8bbe026ef4a1ea66a57b2" style="width: 100.0%; height: 100.0%;">45: McDonald's Corporation, United States</div>`)[0];
+                popup_bb9f44ca32b4923ffb43d11593a55095.setContent(html_2d19a67eaef8bbe026ef4a1ea66a57b2);
+            
+        
+
+        marker_5e614b4eb2e8bd16aa44b6b741170ee3.bindPopup(popup_bb9f44ca32b4923ffb43d11593a55095)
+        ;
+
+        
+    
+    
+            var marker_3d72646a450fb1de43eddb7bf7ca3125 = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_8209476319d8a414ef52219a4a8224ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b683a36ba974b2c36f3833688cd39a63 = $(`<div id="html_b683a36ba974b2c36f3833688cd39a63" style="width: 100.0%; height: 100.0%;">46: Shell plc, United Kingdom</div>`)[0];
+                popup_8209476319d8a414ef52219a4a8224ae.setContent(html_b683a36ba974b2c36f3833688cd39a63);
+            
+        
+
+        marker_3d72646a450fb1de43eddb7bf7ca3125.bindPopup(popup_8209476319d8a414ef52219a4a8224ae)
+        ;
+
+        
+    
+    
+            var marker_81e6ac152e74e43c6fd57d32f6ae53b8 = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_bec8394ccab6d854008602ff09b5ea36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28a882b137180bb411205bb67f560d56 = $(`<div id="html_28a882b137180bb411205bb67f560d56" style="width: 100.0%; height: 100.0%;">47: AstraZeneca plc, United Kingdom</div>`)[0];
+                popup_bec8394ccab6d854008602ff09b5ea36.setContent(html_28a882b137180bb411205bb67f560d56);
+            
+        
+
+        marker_81e6ac152e74e43c6fd57d32f6ae53b8.bindPopup(popup_bec8394ccab6d854008602ff09b5ea36)
+        ;
+
+        
+    
+    
+            var marker_b36c1e776e4bd5ed9e5ba73fd3307467 = L.marker(
+                [52.865196, -7.9794599],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_b4b883eab44d8b3c50cf04de3c20d22c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab95f6b8b53be619cf0b1b3385683952 = $(`<div id="html_ab95f6b8b53be619cf0b1b3385683952" style="width: 100.0%; height: 100.0%;">48: Accenture plc, Ireland</div>`)[0];
+                popup_b4b883eab44d8b3c50cf04de3c20d22c.setContent(html_ab95f6b8b53be619cf0b1b3385683952);
+            
+        
+
+        marker_b36c1e776e4bd5ed9e5ba73fd3307467.bindPopup(popup_b4b883eab44d8b3c50cf04de3c20d22c)
+        ;
+
+        
+    
+    
+            var marker_37786b0ebe9db3d3bf4432eada5534e7 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_1b7b056f9d17e1a8e5fff899c8d94ceb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65b7ae07ff3b1dd87a63e2e1a878df7b = $(`<div id="html_65b7ae07ff3b1dd87a63e2e1a878df7b" style="width: 100.0%; height: 100.0%;">49: Netflix, Inc., United States</div>`)[0];
+                popup_1b7b056f9d17e1a8e5fff899c8d94ceb.setContent(html_65b7ae07ff3b1dd87a63e2e1a878df7b);
+            
+        
+
+        marker_37786b0ebe9db3d3bf4432eada5534e7.bindPopup(popup_1b7b056f9d17e1a8e5fff899c8d94ceb)
+        ;
+
+        
+    
+    
+            var marker_bd86cb35b6097336eac7ea69c0930d22 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_d7db27b457dfc189261e8bbb0114c335);
+        
+    
+        var popup_0c7fb1a126bfa47416e399bd595f0974 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ec25f198d04bbd53fe4e438b63c10fa = $(`<div id="html_2ec25f198d04bbd53fe4e438b63c10fa" style="width: 100.0%; height: 100.0%;">50: Thermo Fisher Scientific Inc., United States</div>`)[0];
+                popup_0c7fb1a126bfa47416e399bd595f0974.setContent(html_2ec25f198d04bbd53fe4e438b63c10fa);
+            
+        
+
+        marker_bd86cb35b6097336eac7ea69c0930d22.bindPopup(popup_0c7fb1a126bfa47416e399bd595f0974)
+        ;
+
+        
+    
+    
+            marker_cluster_d7db27b457dfc189261e8bbb0114c335.addTo(map_25b3cb23271f6e910fd4db8b7fc4aea7);
+        
+</script>
+</html>
